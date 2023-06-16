@@ -104,6 +104,7 @@ h4 {
 .msg h2 {
     background-color: #881600;
     color: white;
+    font-family: 'Ubuntu', 'Open Sans', sans-serif;
 }
 .msg p {
     background-color: #881600;
