@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Rajdhani&display=swap');
+
+/* GENERAL CODE */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF275;
+}
+h2 {
+    margin: 0;
+}
+main section {
+    text-align: center;
+}
+main section img {
+    box-sizing: border-box;
+}
+#content {
+    max-width: 1117px;
+    margin: 0 auto;
+}
+#logo_link {
+    padding-top: 2px;
+    justify-self: center;
+    align-self: center;
+}
+.logo {
+    width: 220px;
+    margin-left: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-inline: 90px;
+    margin-left: 160px;
+}
+nav a {
+    background: -webkit-linear-gradient(0deg, #FFF275 0%, #FF8C42 50%, #0267C1 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+    font-size: 20px;
+    font-family: DotGothic16;
+    font-weight: bold;
+    padding: 35px;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    transition: .3s;
+}
+nav a:hover {
+    animation: pulse 1s;
+    transition: .3s;
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    70% {
+      transform: scale(.8);
+    }
+}
+footer {
+    width: 957px;
+    color: white;
+    background-color: #0267C1;
+    padding: 25px 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: DotGothic16;
+}
+footer a{
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+footer a:hover{
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    color: white;
+}
+footer p {
+    font-size: 1.2em;
+}
+footer .social img {
+    padding-top: 15px;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* GENERAL CODE */
+/* --------------------------------------------- */
+/* HOME PAGE */
+
+#hero-img{
+    width: 1050px;
+    height: 576px;
+    margin-bottom: 70px;
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+.button-box {
+    text-align: center;
+    margin-top: 60px;
+}
+.location {
+    grid-column: 5/11;
+    grid-row: 4/7;
+    box-shadow: 5px 5px 10px #6f7364;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.a-msg {
+    grid-column: 1/5;
+    grid-row: 4/7;
+    box-shadow: 5px 5px 10px #6f7364;
+    line-height:1.5em;
+    padding: 35px;
+    background-color: #FF8C42;
+    position: relative;
+    text-align: center;
+}
+.technology {
+    grid-column: 5/11;
+    grid-row: 5/7;
+    box-shadow: 5px 5px 10px #6f7364;
+    width: 80%;
+    height: 403px;
+    display: block;
+    margin: 0 auto;
+    position: relative; top: 450px; right: 515px;
+}
+.b-msg {
+    grid-column: 1/5;
+    grid-row: 5/7;
+    box-shadow: 5px 5px 10px #6f7364;
+    line-height:1.5em;
+    padding: 35px;
+    background-color: #FF8C42;
+    position: relative; top: 450px; left: 605px;
+    text-align: center;
+}
+#background {
+    margin-top: 450px;
+    height: 420px;
+    background-color: #FFF275;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+.home-title {
+    color: black;
+    font-family: "DotGothic16";
+    font-size: 45px;
+    margin-top: 100px;
+}
+#home-h4 {
+    font-family: "DotGothic16";
+    margin-top: -20px;
+    color: white;
+}
+.book{
+    transition: all .5s ease;
+    font-family: DotGothic16;
+    text-transform: uppercase;
+    line-height: 1;
+    background-color : transparent;
+    outline: none;
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: #0267C1;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+.book:hover {
+    color: #001F3F;
+    background-color: #fff;
+}
+.a-msg h2, .b-msg h2 {
+    color: white;
+    font-family: DotGothic16;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 68px;
+
+}
+.a-msg p, .b-msg p {
+    color: white;
+    font-size: 17px;
+    font-family: Rajdhani;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* FAQ PAGE */
+
+#faq-msg h1, #faq-msg h4 {
+    text-align: center;
+}
+#faq-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#faq-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+#faq {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    margin-top: -100px;
+}
+#faq-img {
+    width: 1060px;
+    height: 576px;
+}
+header{
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+#faq-background {
+    height: 725px;
+    background-color: #f3f397;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+.box-msg {
+    width: 1034px;
+    margin-top: 25px;
+    background-color: #FF8C42;
+    line-height: 1.5em;
+    padding: 10px;
+    border-color: black;
+    border-style: double;
+}
+.faq-title {
+    color: white;
+    font-family: "DotGothic16";
+    font-style: bold;
+    font-size: 3em;
+    margin-top: 150px;
+}
+.box-msg h2 {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: DotGothic16;
+}
+.box-msg p {
+    color: white;
+    font-size: .9em;
+    font-weight: bold;
+    padding-bottom: 15px;
+    padding-top: 15;
+    font-family: Rajdhani;
+}
+
+/* FAQ PAGE */
+/* --------------------------------------------- */
+/* PRODUCTS PAGE */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.products-title {
+    color: black;
+    font-family: "DotGothic16";
+    font-size: 45px;
+    margin-top: 100px;
+}
+#products-h4 {
+    font-family: "DotGothic16";
+    margin-top: -20px;
+    color: black;
+    font-size: 20px;
+}
+.product-img {
+    border: 25px solid #B88846;
+    border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    position: relative; right: 80px;
+}
+#name{
+    position: relative; right: 20px; top: 25px;
+    font-family: DotGothic16;
+    font-size: 20px;
+}
+.product-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.product-1 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.product-2 {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+.product-3 {
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+.product-4 {
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+.product-5 {
+    grid-column: 5/7;
+    grid-row: 3/4;
+}
+.product-6 {
+    grid-column: 8/10;
+    grid-row: 3/4;
+}
+.product-1, .product-2, .product-3, .product-4, .product-5, .product-6 { 
+    margin: 50px auto;
+    width: 60%;
+}
+
+/* PRODUCTS PAGE */
+/* --------------------------------------------- */
+
+
+/*@media query*/
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
